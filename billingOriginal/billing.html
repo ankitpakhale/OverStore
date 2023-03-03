@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="Start your development with Meyawo landing page." />
+    <meta name="author" content="Devcrud" />
+    <title>Billing</title>
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+      <div class="container">
+        <a class="logo" href="#">Over Store</a>
+        <ul class="nav">
+          <li class="item">
+            <a class="link" href="index.html">Home</a>
+          </li>
+          <li class="item">
+            <a class="link" href="about.html">About</a>
+          </li>
+          <li class="item">
+            <a class="link" href="product.html">Product</a>
+          </li>
+          <li class="item">
+            <a class="link" href="Contect.html">Contact</a>
+          </li>
+          <li class="item">
+            <a class="link" href="billing.html">Billing</a>
+          </li>
+          <li class="item">
+            <a class="link" href="login.html">Login</a>
+          </li>
+          <li class="item">
+            <a class="link" href="Addcustomer.html">Add Customer</a>
+          </li>
+        </ul>
+        <a
+          href="javascript:void(0)"
+          id="nav-toggle"
+          class="hamburger hamburger--elastic">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <!-- End of Page Navbar -->
+    <header class="header header-mini">
+      <div class="header-title">Billing</div>
+    </header>
+
+    <section class="section" id="product">
+        <button
+        type="button"
+        class="btn btn-primary m-2 ml-auto mr-auto"
+        data-toggle="modal"
+        data-target="#exampleModalCenter">
+        Add Bill
+      </button>
+
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Add Billing From
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mt-2">
+                            <select class="form-control">
+                              <option>Customer Name</option>
+                              <option>abc</option>
+                              <option>xyz</option>
+                            </select>
+                          </div>
+                      <div class="col-md-6 mt-2">
+                        <select class="form-control">
+                          <option>Product Name</option>
+                          <option>abc</option>
+                          <option>xyz</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mt-2">
+                        <input
+                          type="number"
+                          class="form-control"
+                          name="Price"
+                          placeholder="Price" readonly/>
+                      </div>
+                      <div class="col-md-6 mt-2">
+                        <input
+                          type="number"
+                          class="form-control"
+                          name="quntity"
+                          placeholder="Enter Quntity" />
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Add Bill</button>
+                  </form>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <table class="table table-primary table-striped" id="myTable">
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Quintity</th>
+            <th>Total</th>
+            <th>Bill Date</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abc</td>
+            <td>demo</td>
+            <td>100</td>
+            <td>10</td>
+            <td>1000</td>
+            <td>23-12-2023</td>
+            <td>
+              <a href="singlebill.html"><i class="ti-eye"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Abc</td>
+            <td>demo</td>
+            <td>100</td>
+            <td>10</td>
+            <td>1000</td>
+            <td>23-12-2023</td>
+            <td>
+              <a href="singlebill.html"><i class="ti-eye"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Abc</td>
+            <td>demo</td>
+            <td>100</td>
+            <td>10</td>
+            <td>1000</td>
+            <td>23-12-2023</td>
+            <td>
+              <a href="singlebill.html"><i class="ti-eye"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <footer class="footer">
+        <p class="mb-0">
+          Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          &copy; <a href="http://www.devcrud.com">DevCRUD</a>
+        </p>
+        <div class="social-links text-right m-auto ml-sm-auto">
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-facebook"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-twitter-alt"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-google"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-pinterest-alt"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-instagram"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- end of page footer -->
+
+    <!-- core  -->
+    <script>
+      let table = new DataTable("#myTable");
+    </script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+  </body>
+</html>

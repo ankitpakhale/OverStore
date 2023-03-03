@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="Start your development with Meyawo landing page." />
+    <meta name="author" content="Devcrud" />
+    <title>Product</title>
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css" />
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+      <div class="container">
+        <a class="logo" href="#">Over Store</a>
+        <ul class="nav">
+          <li class="item">
+            <a class="link" href="index.html">Home</a>
+          </li>
+          <li class="item">
+            <a class="link" href="about.html">About</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Product</a>
+          </li>
+          <li class="item">
+            <a class="link" href="Contect.html">Contact</a>
+          </li>
+          <li class="item">
+            <a class="link" href="billing.html">Billing</a>
+          </li>
+          <li class="item">
+            <a class="link" href="login.html">Login</a>
+          </li>
+          <li class="item">
+            <a class="link" href="Addcustomer.html">Add Customer</a>
+          </li>
+        </ul>
+        <a
+          href="javascript:void(0)"
+          id="nav-toggle"
+          class="hamburger hamburger--elastic">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <!-- End of Page Navbar -->
+
+    <section class="section" id="product">
+      <div class="container text-center">
+        <h6 class="section-title mb-6">Product</h6>
+        <button
+          type="button"
+          class="btn btn-primary m-2"
+          data-toggle="modal"
+          data-target="#exampleModalCenter">
+          Add Product
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Add Profuct From
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 mt-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="ProductName"
+                        placeholder="Product Name" />
+                    </div>
+                    <div class="col-md-6 mt-2">
+                      <select class="form-control">
+                        <option>Product Category</option>
+                        <option>abc</option>
+                        <option>xyz</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="Price"
+                        placeholder="Price" />
+                    </div>
+                    <div class="col-md-6 mt-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="quntity"
+                        placeholder="Enter Quntity" />
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 mt-2">
+                          <textarea class="form-control" rows="3" placeholder="Product Description"></textarea>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 mt-2">
+                          <input type="file" class="form-control-file" name="product image"/>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary mt-2">Add Customer</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="product.html" class="portfolio-card">
+              <img
+                src="assets/imgs/folio-1.jpg"
+                class="portfolio-card-img"
+                alt="Product" />
+              <span class="portfolio-card-overlay">
+                <span class="portfolio-card-caption">
+                  <h4>Product Name</h4>
+                  <p class="font-weight-normal">Category:</p>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="product.html" class="portfolio-card">
+              <img
+                class="portfolio-card-img"
+                src="assets/imgs/folio-2.jpg"
+                class="img-responsive rounded"
+                alt="Product" />
+              <span class="portfolio-card-overlay">
+                <span class="portfolio-card-caption">
+                  <h4>Product Name</h4>
+                  <p class="font-weight-normal">Category:</p>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="product.html" class="portfolio-card">
+              <img
+                class="portfolio-card-img"
+                src="assets/imgs/folio-3.jpg"
+                class="img-responsive rounded"
+                alt="Product" />
+              <span class="portfolio-card-overlay">
+                <span class="portfolio-card-caption">
+                  <h4>Product Name</h4>
+                  <p class="font-weight-normal">Category:</p>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="product.html" class="portfolio-card">
+              <img
+                src="assets/imgs/folio-1.jpg"
+                class="portfolio-card-img"
+                alt="Product" />
+              <span class="portfolio-card-overlay">
+                <span class="portfolio-card-caption">
+                  <h4>Product Name</h4>
+                  <p class="font-weight-normal">Category:</p>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="product.html" class="portfolio-card">
+              <img
+                class="portfolio-card-img"
+                src="assets/imgs/folio-2.jpg"
+                class="img-responsive rounded"
+                alt="Product" />
+              <span class="portfolio-card-overlay">
+                <span class="portfolio-card-caption">
+                  <h4>Product Name</h4>
+                  <p class="font-weight-normal">Category:</p>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="product.html" class="portfolio-card">
+              <img
+                class="portfolio-card-img"
+                src="assets/imgs/folio-3.jpg"
+                class="img-responsive rounded"
+                alt="Product" />
+              <span class="portfolio-card-overlay">
+                <span class="portfolio-card-caption">
+                  <h4>Product Name</h4>
+                  <p class="font-weight-normal">Category:</p>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <footer class="footer">
+        <p class="mb-0">
+          Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          &copy; <a href="http://www.devcrud.com">DevCRUD</a>
+        </p>
+        <div class="social-links text-right m-auto ml-sm-auto">
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-facebook"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-twitter-alt"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-google"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-pinterest-alt"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"
+            ><i class="ti-instagram"></i
+          ></a>
+          <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+  </body>
+</html>
