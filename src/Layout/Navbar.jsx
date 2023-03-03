@@ -6,7 +6,15 @@ const Navbar = () => {
     <>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <Link className="text-dark h3" to="/">
+          <Link
+            style={{
+              fontWeight: "700",
+              color: "#A59CCA",
+              fontSize: "30px",
+              cursor: "pointer",
+            }}
+            to="/"
+          >
             Over Store
           </Link>
           <button
